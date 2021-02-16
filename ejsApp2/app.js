@@ -28,7 +28,16 @@ app.get('/about', function(req, res) {
 });
 
 app.get('/movies', function(req, res) {
-    res.render('pages/movies');
+    let movie1 = "Spirited Away";
+    let movie2 = "Parasite";
+    let movie3 = "Pursuit of Happiness";
+    let movie4 = "Kiki's Delivery Service";
+    res.render('pages/movies', {
+        value3PassedToRenderPage : movie1,
+        value4PassedToRenderPage : movie2,
+        value5PassedToRenderPage: movie3,
+        value6PassedToRenderPage: movie4
+    });
 });
 
 
