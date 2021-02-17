@@ -40,6 +40,20 @@ app.get('/movies', function(req, res) {
     });
 });
 
+//tv shows page
+app.get('/tvshows', function(req, res) {
+    let tvshow1 = "The Walking Dead";
+    let tvshow2 = "Empire";
+    let tvshow3 = "Martin";
+    let tvshow4 = "One on One";
+    res.render('pages/tvshows', {
+        value7PassedToRenderPage : tvshow1,
+        value8PassedToRenderPage : tvshow2,
+        value9PassedToRenderPage : tvshow3,
+        value10PassedToRenderPage: tvshow4
+    });
+});
+
 
 // upLoadData page 
 // sending a get with 1 param
